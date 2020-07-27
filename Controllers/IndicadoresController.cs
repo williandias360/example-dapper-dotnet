@@ -11,6 +11,12 @@ namespace ApiIndicadores.Controllers
     [Route("api/[controller]")]
     public class IndicadoresController : ControllerBase
     {
+        [HttpGet]
+        public IEnumerable<Indicador> Get([FromServices] IndicadoresDAO _dao)
+        {
+            return _dao.Listar();
+        }
+
         [HttpGet("{id}")]
         public Indicador Get([FromServices] IndicadoresDAO _dao, string id)
         {

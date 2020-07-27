@@ -20,6 +20,7 @@ namespace ApiIndicadores
         {
             services.AddSingleton<IConfiguration>(_ => Configuration);
             services.AddTransient<IndicadoresDAO>();
+            services.AddTransient<ClienteDAO>();
 
             services.AddControllers();
         }

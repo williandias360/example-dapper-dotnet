@@ -1,6 +1,7 @@
 using System.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Dapper;
+using System.Collections.Generic;
 namespace ApiIndicadores
 {
     public class IndicadoresDAO
@@ -25,9 +26,21 @@ namespace ApiIndicadores
             }
         }
 
-        // public IEnumerable<Indicador> Listar()
-        // {
+        public IEnumerable<Indicador> Listar()
+        {
+            using (SqlConnection conexao = new SqlConnection(
+                _config.GetConnectionString("BaseIndicadores")))
+            {
+                return conexao.Query<Indicador>("SELECT * FROM dbo.Indicadores");
+            }
+        }
 
-        // }
+        public void Inserir(Indicador indicador)
+        {
+            using (SqlConnection conexao = new SqlConnection(_config.GetConnectionString("BaseIndicadores")))
+            {
+
+            }
+        }
     }
 }

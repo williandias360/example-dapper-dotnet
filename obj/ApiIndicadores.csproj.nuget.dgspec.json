@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/willian/Projetos/Csharp/Api-AspnetCore-Dapper/ApiIndicadores/ApiIndicadores.csproj": {}
+    "/home/willian/Projetos/Csharp/ApiDotnetDapper/ApiIndicadores.csproj": {}
   },
   "projects": {
-    "/home/willian/Projetos/Csharp/Api-AspnetCore-Dapper/ApiIndicadores/ApiIndicadores.csproj": {
+    "/home/willian/Projetos/Csharp/ApiDotnetDapper/ApiIndicadores.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/willian/Projetos/Csharp/Api-AspnetCore-Dapper/ApiIndicadores/ApiIndicadores.csproj",
+        "projectUniqueName": "/home/willian/Projetos/Csharp/ApiDotnetDapper/ApiIndicadores.csproj",
         "projectName": "ApiIndicadores",
-        "projectPath": "/home/willian/Projetos/Csharp/Api-AspnetCore-Dapper/ApiIndicadores/ApiIndicadores.csproj",
+        "projectPath": "/home/willian/Projetos/Csharp/ApiDotnetDapper/ApiIndicadores.csproj",
         "packagesPath": "/home/willian/.nuget/packages/",
-        "outputPath": "/home/willian/Projetos/Csharp/Api-AspnetCore-Dapper/ApiIndicadores/obj/",
+        "outputPath": "/home/willian/Projetos/Csharp/ApiDotnetDapper/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/willian/.nuget/NuGet/NuGet.Config"
@@ -40,6 +40,10 @@
               "target": "Package",
               "version": "[2.0.35, )"
             },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.1, )"
@@ -55,12 +59,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -69,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
         }
       }
     }
